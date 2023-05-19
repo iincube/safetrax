@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
+    "start": "nx serve host",
     "lint": "nx run-many --all --target=lint",
     "test": "yarn nx run-many -t test",
     "prepare": "husky install"

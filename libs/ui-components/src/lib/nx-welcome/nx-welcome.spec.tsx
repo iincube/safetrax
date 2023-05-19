@@ -4,7 +4,7 @@ import NxWelcome from './nx-welcome';
 
 describe('NxWelcome', () => {
   it('should render successfully', () => {
-    const { baseElement } = render(<NxWelcome />);
+    const { baseElement } = render(<NxWelcome title="Welcome"/>);
     expect(baseElement).toBeTruthy();
   });
 });
