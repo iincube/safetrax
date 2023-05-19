@@ -3,7 +3,6 @@ import * as fs from 'fs';
 import * as ReactDOMServer from 'react-dom/server';
 import isbot from 'isbot';
 
-import App from './app/app';
 import React from 'react';
 const LazyApp = React.lazy(() => import('./app/app'));
 let indexHtml: null | string = null;
