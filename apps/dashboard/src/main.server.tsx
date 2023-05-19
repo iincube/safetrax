@@ -4,7 +4,8 @@ import * as ReactDOMServer from 'react-dom/server';
 import isbot from 'isbot';
 
 import App from './app/app';
-
+import React from 'react';
+const LazyApp = React.lazy(() => import('./app/app'));
 let indexHtml: null | string = null;
 
 export function handleRequest(indexPath: string) {
@@ -23,7 +24,7 @@ export function handleRequest(indexPath: string) {
       ? 'onAllReady'
       : 'onShellReady';
 
-    const stream = ReactDOMServer.renderToPipeableStream(<App />, {
+    const stream = ReactDOMServer.renderToPipeableStream(<LazyApp />, {
       [callbackName]() {
         res.statusCode = didError ? 500 : 200;
         res.setHeader('Content-type', 'text/html; charset=utf-8');
