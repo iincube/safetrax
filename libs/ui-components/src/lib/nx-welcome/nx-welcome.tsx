@@ -1,11 +1,10 @@
-import { useTranslation } from 'react-i18next'
+import { useTranslation } from 'react-i18next';
 
 export function NxWelcome({ appName }: { appName: string }) {
-  const { t } = useTranslation()
+  const { t } = useTranslation();
 
   return (
-    <>
-      <div className="wrapper">
+    <div className="wrapper">
         <div className="container">
           <div id="welcome">
             <h1>{t('greeting')}</h1>
@@ -13,8 +12,7 @@ export function NxWelcome({ appName }: { appName: string }) {
           </div>
         </div>
       </div>
-    </>
-  )
+  );
 }
 
-export default NxWelcome
+export default NxWelcome;
