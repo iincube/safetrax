@@ -1,14 +1,13 @@
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-import styles from './app.module.scss';
-
-import NxWelcome from './nx-welcome';
+import styles from './app.module.scss'
+import { NxWelcome } from '@safetrax/ui-components'
 
 export function App() {
   return (
     <div>
-      <NxWelcome title="duties" />
+      <NxWelcome appName="duties" />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

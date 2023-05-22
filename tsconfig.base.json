@@ -16,7 +16,8 @@
     "baseUrl": ".",
     "paths": {
       "@safetrax/ui-components": ["libs/ui-components/src/index.ts"],
-      "@safetrax/ui-components/server": ["libs/ui-components/src/server.ts"]
+      "@safetrax/ui-components/server": ["libs/ui-components/src/server.ts"],
+      "@safetrax/locales": ["libs/locales/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
